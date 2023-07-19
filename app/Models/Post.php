@@ -34,8 +34,8 @@ class Post extends Model
     }
 
     //аксессор
-    public function getTitleAttribute($value) {
-        //показывает имя статьи в Upper-виде, а в БД они хранятся также
-        return Str::upper($value);
-    }
+    // public function getTitleAttribute($value) {
+    //     //показывает имя статьи в Upper-виде, а в БД они хранятся также
+    //     return Str::upper($value);
+    // }
 }

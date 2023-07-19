@@ -20,6 +20,7 @@ class PostController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @param  int  $id
      */
     public function index(Request $request)
     {
@@ -136,7 +137,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         $title = 'Post show';
-        return view('posts.show', compact('id', 'title', 'post'));
+        return view('posts.show', ['id' => $id, 'title' => $title, 'post' => $post]);
     }
 
     /**

@@ -29,7 +29,7 @@
               <p class="card-text">{{mb_strimwidth($post->text, 0, 120, '...')}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="{{route("posts.$id", ['post'=>$id])}}">
+                  <a href="posts/{{$post->id}}">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                   </a>
                   <a href="">
